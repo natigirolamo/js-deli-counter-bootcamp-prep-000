@@ -4,11 +4,11 @@ function takeANumber(katzDeliLine,name){
 
 // Quando vc insere, ele retorna a posição em que inseriu
 
-var new_position = katzDeliLine.push(name);
+var new_position = katzDeliLine.push(katzDeliLine.length);
 
 // maneira mais curta de concatenar string
 
-return `Welcome, ${name}. You are number ${new_position} in line.`
+return `Welcome, you are number ${new_position} in line.`
 
 }
 
@@ -33,3 +33,5 @@ function currentLine(katzDeliLine){
   console.log("The line is currently: " + lineNamesandNumbers)
   return "The line is currently: " + lineNamesandNumbers.join(', ');
 }
+
+debugger
